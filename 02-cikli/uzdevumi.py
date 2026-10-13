@@ -39,11 +39,11 @@
 # 5. ★ Izvadi skaitļus no 1 līdz 50, bet tos, kas dalās ar 7, izvadi ar piezīmi
 #    50 -> dalās ar 7.
 
-for i in range(1, 50):
-     if i % 7 == 0:
-          print(i, "-> dalās ar 7"):
-     else:
-          print(i)
+# for i in range(1, 50):
+#      if i % 7 == 0:
+#           print(i, "-> dalās ar 7"):
+#      else:
+#           print(i)
 
 
 
