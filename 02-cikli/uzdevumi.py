@@ -53,7 +53,8 @@
 
 # 6. Izvadi skaitļus no 10 līdz 20 ieskaitot.
 
-
+for i in range(10, 20 + 1):
+    print(i)
 
 
 # 7. Izvadi skaitļus no 20 līdz 1 dilstošā secībā.
