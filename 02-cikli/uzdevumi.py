@@ -48,97 +48,113 @@
 
 
 # ----------------------------------------------------------
-# 10-016 · range() ar robežām un soli
-# ----------------------------------------------------------
+# # 10-016 · range() ar robežām un soli
+# # ----------------------------------------------------------
 
-# 6. Izvadi skaitļus no 10 līdz 20 ieskaitot.
+# # 6. Izvadi skaitļus no 10 līdz 20 ieskaitot.
 
-for i in range(10, 20 + 1):
-    print(i)
+# for i in range(10, 20 + 1):
+#     print(i)
 
 
-# 7. Izvadi skaitļus no 20 līdz 1 dilstošā secībā.
+# # 7. Izvadi skaitļus no 20 līdz 1 dilstošā secībā.
 
-for i in range(20, 0, -1):
-    print(i)
+# for i in range(20, 0, -1):
+#     print(i)
     
 
 
-# 8. Izvadi katru trešo skaitli no 0 līdz 30.
+# # 8. Izvadi katru trešo skaitli no 0 līdz 30.
 
-for i in range(0, 31, 3):
-    print(i)
-
-
-
-# 9. Izvadi reizināšanas tabulu skaitlim 7 formātā 7 x 3 = 21.
-
-for i in range(1, 11):
-    print("7 x", i, "=", 7 * i)
-
-
-# 10. Programma prasa skaitli n un izvada visus skaitļus no 1 līdz n.
-
-n = int(input("Ievadi skaitli n: "))
-for i in range(1, n + 1):
-    print(i)
+# for i in range(0, 31, 3):
+#     print(i)
 
 
 
-# 11. ★ Programma prasa divus skaitļus un izvada visus starp tiem — neatkarīgi no tā, kurš
-#    ievadīts pirmais.
+# # 9. Izvadi reizināšanas tabulu skaitlim 7 formātā 7 x 3 = 21.
 
-input1 = int(input("Ievadi pirmo skaitli: "))
-input2 = int(input("Ievadi otro skaitli: "))
-
-if input1 > input2:
-    input1, input2 = input2, input1
-
-for i in range(input1, input2 + 1):
-    print(i)
+# for i in range(1, 11):
+#     print("7 x", i, "=", 7 * i)
 
 
-# ----------------------------------------------------------
-# 10-017 · Uzkrājējs: summa, reizinājums, skaitītājs
-# ----------------------------------------------------------
+# # 10. Programma prasa skaitli n un izvada visus skaitļus no 1 līdz n.
 
-# 12. Aprēķini un izvadi skaitļu summu no 1 līdz 100.
-
-for i in range(1, 101):
-    summa = 0
-    summa += i 
-    print(summa)
+# n = int(input("Ievadi skaitli n: "))
+# for i in range(1, n + 1):
+#     print(i)
 
 
-# 13. Programma prasa n un izvada n faktoriālu (visu skaitļu reizinājumu no 1 līdz n).
 
-n = int(input("Ievadi skaitli n: "))
-faktorials = 1
-for i in range(1, n + 1):
-    faktorials *= i
-print(faktorials)
+# # 11. ★ Programma prasa divus skaitļus un izvada visus starp tiem — neatkarīgi no tā, kurš
+# #    ievadīts pirmais.
+
+# input1 = int(input("Ievadi pirmo skaitli: "))
+# input2 = int(input("Ievadi otro skaitli: "))
+
+# if input1 > input2:
+#     input1, input2 = input2, input1
+
+# for i in range(input1, input2 + 1):
+#     print(i)
+
+
+# # ----------------------------------------------------------
+# # 10-017 · Uzkrājējs: summa, reizinājums, skaitītājs
+# # ----------------------------------------------------------
+
+# # 12. Aprēķini un izvadi skaitļu summu no 1 līdz 100.
+
+# for i in range(1, 101):
+#     summa = 0
+#     summa += i 
+#     print(summa)
+
+
+# # 13. Programma prasa n un izvada n faktoriālu (visu skaitļu reizinājumu no 1 līdz n).
+
+# n = int(input("Ievadi skaitli n: "))
+# faktorials = 1
+# for i in range(1, n + 1):
+#     faktorials *= i
+# print(faktorials)
 
 
 # 14. Programma prasa 5 skaitļus pēc kārtas un izvada to summu un vidējo aritmētisko.
 
-
+# set = 0
+# for i in range(5):
+#     skaitlis = int(input("Ievadi skaitli: "))
+#     set += skaitlis
+#     videjais = set / 5
+# print("Summa:", set)
+# print("Vidējais:", videjais)
 
 
 # 15. Programma prasa skaitli un saskaita, cik tajā ir ciparu.
 
-
+# skaitlis = input("Ievadi skaitli: ")
+# skaits = 0
+# for i in range(len(skaitlis)):
+#     skaits += 1
+# print(skaits)
 
 
 # 16. ★ Programma prasa skaitli un izvada tā ciparu summu (izmantojot % un // ciklā).
 
-
-
+# n = int(input("Ievadi skaitli: "))
+# summa = 0
+# while n > 0:
+#     summa += n % 10
+#     n //= 10
+# print("Ciparu summa: ", summa)
 
 # 17. ★ Aprēķini summu 1/1 + 1/2 + 1/3 + … + 1/n un izvadi ar četriem cipariem aiz komata.
 
-
-
-
+n = int(input("Ievadi skaitli n: "))
+summa = 0
+for i in range(1, n + 1):
+    summa += 1 / i
+print(f"Summa: {summa:.4f}")
 
 # ----------------------------------------------------------
 # 10-018 · Praktikums: aprēķini ar for ciklu

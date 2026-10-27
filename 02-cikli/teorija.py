@@ -32,8 +32,8 @@
 #   range(sakums, beigas)         sakums .. beigas-1
 #   range(sakums, beigas, solis)  ar soli
 
-for i in range(1, 11):        # 1 .. 10
-    print(i)
+# for i in range(1, 11):        # 1 .. 10
+#     print(i)
 
 # for i in range(0, 21, 5):     # 0, 5, 10, 15, 20
 #     print(i)
